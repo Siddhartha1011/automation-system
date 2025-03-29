@@ -42,5 +42,6 @@ cd automation-system
   A FastAPI /execute endpoint allows users to call functions via API.
 
 # Run the API call
+  uvicorn main:app --reload
   curl -X POST "http://127.0.0.1:8000/execute" -H "Content-Type: application/json" -d '{"prompt": "Launch Google Chrome"}'
  
